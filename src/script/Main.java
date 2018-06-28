@@ -11,7 +11,7 @@ public class Main extends Driver {
   static String burgerKingCNPJ = "07415082002470";
   static String dataCompra = "12 04 18";
   static String horaCompra = "12 59 PM";
-  static String urlQuestionario = "https://www.opiniaoburgerking.com.br/";
+  static String commit1 = "https://www.opiniaoburgerking.com.br/";
   
   public static void clicarAleatorio() {
     Boolean existeLista = false;
@@ -59,7 +59,7 @@ public class Main extends Driver {
   
   public static void main(String[] args) {
     startDriver();
-    acessar(urlQuestionario);
+    acessar(commit1);
     clicar("//input[@value='Continuar']");
     preencher("//input[@id='SurveyCode']", burgerKingCNPJ);
     selecionar("//select[@id='InputDay']", dataCompra.split(" ")[0]);
